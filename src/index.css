@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-acai-950 font-body text-cream antialiased;
+    background-image:
+      radial-gradient(ellipse at top, #3D1A5C 0%, #2D0F45 45%, #1E0A2E 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-lime-brand ring-offset-2 ring-offset-acai-900;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+}
