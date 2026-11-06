@@ -20,8 +20,8 @@ export const store = {
   hours: {
     timeZone: 'America/Fortaleza',
     open: '17:00',
-    close: '22:45',
-    label: 'Todos os dias, das 17:00 às 22:45',
+    close: '23:00',
+    label: 'Todos os dias, das 17:00 às 23:00',
   },
   googleReviewUrl:
     'https://search.google.com/local/writereview?placeid=ChIJI1arxc1IxwcRiSTJ61CKcB0',
